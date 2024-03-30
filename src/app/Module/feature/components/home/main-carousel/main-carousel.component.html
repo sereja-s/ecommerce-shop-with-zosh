@@ -5,7 +5,8 @@
 
          <ng-container class=""
            *ngFor="let item of carouselData; let i=index">
-            <a [routerLink]="item.path" class="carousel-item">
+            <a 
+				class="carousel-item">
               <img [src]="item.image" alt="carousel image">
             </a>
          </ng-container>

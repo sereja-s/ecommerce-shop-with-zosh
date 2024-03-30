@@ -3,32 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MainCarouselComponent } from './home/main-carousel/main-carousel.component';
-import { HomeProductCardComponent } from './home/home-product-card/home-product-card.component';
-import { ProductSliderComponent } from './home/product-slider/product-slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoAngularMaterialModules } from './DemoAngularMaterialModules';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { NavContentComponent } from './nav-bar/nav-content/nav-content.component';
-import { FooterComponent } from './footer/footer.component';
+import { SharedModule } from './Module/shared/shared.module';
+import { FeatureModule } from './Module/feature/feature.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    MainCarouselComponent,
-    HomeProductCardComponent,
-    ProductSliderComponent,
-    NavBarComponent,
-    NavContentComponent,
-    FooterComponent,
+    AppComponent,    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DemoAngularMaterialModules
+	  DemoAngularMaterialModules,
+	  FeatureModule,
+	  SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

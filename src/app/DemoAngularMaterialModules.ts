@@ -17,7 +17,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCommonModule} from '@angular/material/core';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatCommonModule,
     MatDialogModule,
 		MatTableModule,
-		MatCheckboxModule
+		MatCheckboxModule,
+		MatProgressBarModule,
   ]
 })
 

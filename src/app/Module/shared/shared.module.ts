@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavContentComponent } from './components/nav-bar/nav-content/nav-content.component';
 import { DemoAngularMaterialModules } from 'src/app/DemoAngularMaterialModules';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
 
 
 
@@ -13,12 +14,13 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 	   NavBarComponent,
     FooterComponent,
     NavContentComponent,
-    ProductCardComponent,    
+    ProductCardComponent,
+    StarRatingComponent,    
   ],
   imports: [
 	  CommonModule,
 	  DemoAngularMaterialModules,
 	],
-	exports: [NavBarComponent,	FooterComponent, ProductCardComponent]
+	exports: [NavBarComponent,	FooterComponent, ProductCardComponent, StarRatingComponent]
 })
 export class SharedModule { }

@@ -9,6 +9,14 @@ import { SharedModule } from '../shared/shared.module';
 import { FeatureComponent } from './components/feature.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FormsModule } from '@angular/forms';
+import { CartComponent } from './components/cart/cart.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { PaymentSuccessComponent } from './components/payment-success/payment-success.component';
+import { OrderComponent } from './components/order/order.component';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
+import { ProductReviewCardComponent } from './components/product-details/product-review-card/product-review-card.component';
 
 
 
@@ -20,13 +28,21 @@ import { FormsModule } from '@angular/forms';
 		ProductSliderComponent,
 		HomeProductCardComponent,
   ProductsComponent,
+  CartComponent,
+  ProductDetailsComponent,
+  CheckoutComponent,
+  PaymentComponent,
+  PaymentSuccessComponent,
+  OrderComponent,
+  OrderDetailsComponent,
+  ProductReviewCardComponent,
   
   ],
   imports: [
 	  CommonModule,
 	  DemoAngularMaterialModules,
 	  SharedModule,
-	  
+	  FormsModule
 	],
 	exports: [FeatureComponent, HomeComponent, ProductsComponent]
 })

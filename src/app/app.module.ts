@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoAngularMaterialModules } from './DemoAngularMaterialModules';
 import { SharedModule } from './Module/shared/shared.module';
 import { FeatureModule } from './Module/feature/feature.module';
+import { AdminModule } from './Module/admin/admin.module';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FeatureModule } from './Module/feature/feature.module';
 	  DemoAngularMaterialModules,
 	  FeatureModule,
 	  SharedModule,
+	  AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

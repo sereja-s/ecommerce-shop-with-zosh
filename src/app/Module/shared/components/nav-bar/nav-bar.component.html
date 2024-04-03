@@ -35,7 +35,7 @@
                   <img class="h-10 w-10" src="https://avatarko.ru/img/kartinka/8/zhivotnye_kot_7201.jpg" alt="">
                 </button>
                 <mat-menu #profileMenu="matMenu">
-                  <button mat-menu-item>Orders</button>
+                  <button mat-menu-item (click)="navigateTo('account/orders')">Orders</button>
                   <button mat-menu-item>Profile</button>
                   <button mat-menu-item>Logout</button>
                 </mat-menu>

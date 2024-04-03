@@ -8,7 +8,7 @@ import { DemoAngularMaterialModules } from 'src/app/DemoAngularMaterialModules';
 import { SharedModule } from '../shared/shared.module';
 import { FeatureComponent } from './components/feature.component';
 import { ProductsComponent } from './components/products/products.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CartComponent } from './components/cart/cart.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
@@ -17,6 +17,8 @@ import { PaymentSuccessComponent } from './components/payment-success/payment-su
 import { OrderComponent } from './components/order/order.component';
 import { OrderDetailsComponent } from './components/order-details/order-details.component';
 import { ProductReviewCardComponent } from './components/product-details/product-review-card/product-review-card.component';
+import { AddressFormComponent } from './components/checkout/address-form/address-form.component';
+import { OrderCardComponent } from './components/order/order-card/order-card.component';
 
 
 
@@ -36,13 +38,16 @@ import { ProductReviewCardComponent } from './components/product-details/product
   OrderComponent,
   OrderDetailsComponent,
   ProductReviewCardComponent,
+  AddressFormComponent,
+  OrderCardComponent,
   
   ],
   imports: [
 	  CommonModule,
 	  DemoAngularMaterialModules,
 	  SharedModule,
-	  FormsModule
+	  FormsModule,
+	  ReactiveFormsModule
 	],
 	exports: [FeatureComponent, HomeComponent, ProductsComponent]
 })

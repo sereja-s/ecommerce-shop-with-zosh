@@ -1,0 +1,33 @@
+<div class="container">
+	<form [formGroup]="loginForm" (ngSubmit)="submitForm()">
+		<h1>Shop with Zosh</h1>
+		<div>
+			<mat-form-field class="w-full">
+
+				<mat-label>Email</mat-label>
+				<input matInput formControlName="email" required email>
+
+				<mat-error *ngIf="loginForm.controls['email'].hasError('required')">Email обязательное поле !!!</mat-error>
+				<mat-error *ngIf="loginForm.controls['email'].hasError('email')">Введите правильный email</mat-error>
+
+			</mat-form-field>
+			<mat-form-field class="w-full">
+
+				<mat-label>Password</mat-label>
+				<input matInput formControlName="password" required password>
+
+				<mat-error *ngIf="loginForm.controls['password'].hasError('required')">password обязательное поле !!!</mat-error>
+				<mat-error *ngIf="loginForm.controls['password'].hasError('minlength')">password lолжен быть не менее 8-ми символов</mat-error>
+
+			</mat-form-field>
+
+			<div>
+				<button style="padding: 1.7rem;" mat-raised-button class="w-full" color="accent">Login</button>
+			</div>
+			<div class="pt-5">
+				<span>Если не зарегистрирован</span>
+				<button mat-button color="accent" (click)="changeTemplate()">Register</button>
+			</div>
+		</div>
+	</form>
+</div>

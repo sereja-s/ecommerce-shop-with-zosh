@@ -9,6 +9,10 @@ import { SharedModule } from './Module/shared/shared.module';
 import { FeatureModule } from './Module/feature/feature.module';
 import { AdminModule } from './Module/admin/admin.module';
 import { FormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { AuthModule } from './Module/auth/auth.module';
+import { authReducer } from './State/Auth/auth.reducer';
+
 
 
 @NgModule({
@@ -23,7 +27,9 @@ import { FormsModule } from '@angular/forms';
 	  FeatureModule,
 	  SharedModule,
 	  AdminModule,
-	  FormsModule
+	  FormsModule,
+	  AuthModule,
+	  StoreModule.forRoot({auth:authReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

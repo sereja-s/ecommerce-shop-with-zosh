@@ -14,6 +14,7 @@ import { AuthModule } from './Module/auth/auth.module';
 import { authReducer } from './State/Auth/auth.reducer';
 import { userReducer } from './State/User/user.reducer';
 import { HttpClientModule } from '@angular/common/http';
+import { productReducer } from './State/Product/product.reducer';
 
 
 
@@ -31,7 +32,7 @@ import { HttpClientModule } from '@angular/common/http';
 	  AdminModule,
 	  FormsModule,
 	  AuthModule,
-	  StoreModule.forRoot({ auth: authReducer, user: userReducer }, {}),
+	  StoreModule.forRoot({ auth: authReducer, user: userReducer, product: productReducer }, {}),
 	  HttpClientModule
   ],
   providers: [],

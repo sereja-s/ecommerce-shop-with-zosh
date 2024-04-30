@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { AuthModule } from './Module/auth/auth.module';
 import { authReducer } from './State/Auth/auth.reducer';
+import { userReducer } from './State/User/user.reducer';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -29,7 +31,8 @@ import { authReducer } from './State/Auth/auth.reducer';
 	  AdminModule,
 	  FormsModule,
 	  AuthModule,
-	  StoreModule.forRoot({auth:authReducer})
+	  StoreModule.forRoot({ auth: authReducer, user: userReducer }, {}),
+	  HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,7 +18,7 @@ export class AuthService {
 
 	login(loginData: any) {
 
-		this.http.post(`${this.apiUrl}/signin`, loginData).pipe(
+		return this.http.post(`${this.apiUrl}/signin`, loginData).pipe(
 			map((user: any) => {
 
 				console.log('login user', user);
@@ -39,9 +39,10 @@ export class AuthService {
 		).subscribe((action) => this.store.dispatch(action))
 	}
 	
+	
 	register(user: any) {
 
-		this.http.post(`${this.apiUrl}/signup`, user).pipe(
+		return this.http.post(`${this.apiUrl}/signup`, user).pipe(
 			map((user: any) => {
 
 				console.log('register user', user);
